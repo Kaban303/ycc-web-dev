@@ -1,17 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>домашняя страница</title>
-    <H1>Домашняя страница</H1>
+</head>
+
+<body>
+    <H1 class="header color-red blink">Домашняя страница</H1>
+    <h1>просто заголовок</h1>
     <a href="registration .html">Регистрация</a>
     <br>
     <a href="signin.html">Вход</a>
     <br>
-</head>
-<body>
-    
+    просто текст
 </body>
+<style>
+    h1 {
+
+        font-weight: 700;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+
+    .header {
+        
+        font-weight: 500;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .color-red {
+        color: brown;
+        background-color: black;
+    }
+
+    .blink {
+        -webkit-animation: blink 2s linear infinite;
+        animation: blink 2s linear infinite;
+        font-weight: bold;
+        color: #F00;
+    }
+
+    @-webkit-keyframes blink {
+        0% {
+            color: #F00;
+        }
+
+        50% {
+            color: #FBB;
+        }
+
+        100% {
+            color: #F00;
+        }
+    }
+
+    @keyframes blink {
+        0% {
+            color: #F00;
+        }
+
+        50% {
+            color: #FBB;
+        }
+
+        100% {
+            color: #F00;
+        }
+    }
+</style>
+
 </html>
