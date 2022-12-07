@@ -1,28 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family= noto+Sans:wght@700&family=poppiens:wght@400;500;600&display=swap');
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "poppiens",sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .container {
-    background: linear-gradient(120deg, rgb(98, 255, 36), rgb(0, 0, 0));
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
     height: 100vh;
     overflow: hidden;
 }
-.center-card{
+
+.center-card {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: aliceblue;
+    background: white;
     width: 400px;
     border-radius: 10px;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.849) ;
+    box-shadow: 10px 10px 15px rgb(0, 0, 0, 0.05);
 }
+
 .center-card h1 {
     text-align: center;
     padding: 20px 0;
-    border-bottom:lpx solid rgb(255, 255, 0) ;
+    border-bottom: 1px solid silver;
+}
+
+.center-card .card-body {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.card-body .field {
+    position: relative;
+    border-bottom: 2px solid silver;
+    margin: 20px 0;
+}
+
+.field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: rgb(105, 103, 103);
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+}
+
+.field input:focus~label,
+.field input:valid~label {
+    top: -5px;
+    color: #2691d9;
+}
+
+.form-btn {
+    width: 100%;
+    height: 50px;
+    border: lpx solid;
+    background-color: #2691d9;
+    border-radius: 25px;
+    color: azure;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none
+}
+.form-link {
+    text-align: center;
+    margin: 20px 0;
+    color:#adadad ;
+    font-style: italic;
+    font-size: 16px;
+}
+.form-link a {
+    text-decoration: #2691d9;
 }
